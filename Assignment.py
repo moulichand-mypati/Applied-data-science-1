@@ -18,6 +18,15 @@ def load_dataframe_country_col(filename):
     '''
     Function to load the dataframe and manipulate the country and
     rows features and return two datframes.
+
+    Parameters :
+        - filename : Dataset
+
+    Example :
+        >>> load_dataframe_country_col(filename)
+
+    Returns :
+        2 Dataframes - yearwise and countrywise dataframes
     '''
     df_year_test = pd.read_excel(filename,engine="openpyxl")
     df_test = pd.melt(
